@@ -14,10 +14,16 @@ use Hyperf\Di\Annotation\Aspect;
 use Hyperf\Di\Aop\AbstractAspect;
 use Hyperf\Di\Aop\ProceedingJoinPoint;
 
+/**
+ * @Aspect
+ */
 #[Aspect()]
 class MySqlGrammarAspect extends AbstractAspect
 {
-    public array $classes = [
+    /**
+     * @var string[]
+     */
+    public $classes = [
         'Hyperf\Database\Schema\Grammars\MySqlGrammar::compileColumnListing',
         'Hyperf\Database\Schema\Grammars\MySqlGrammar::compileColumns',
     ];

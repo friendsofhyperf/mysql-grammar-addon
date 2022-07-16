@@ -8,7 +8,7 @@
 ## Installation
 
 ```shell
-composer require friendsofhyperf/mysql-grammar-addon --dev
+composer require friendsofhyperf/mysql-grammar-addon:^0.1.0 --dev
 ```
 
 ## Before
