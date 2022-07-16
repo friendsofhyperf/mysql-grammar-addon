@@ -27,7 +27,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-0.x": "0.1-dev"
+            "0.x-dev": "0.1-dev"
         },
         "hyperf": {
             "config": "FriendsOfHyperf\\MySqlGrammarAddon\\ConfigProvider"
