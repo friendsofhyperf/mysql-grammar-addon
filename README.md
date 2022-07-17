@@ -30,7 +30,7 @@ class Event extends Model
 {}
 ```
 
-## Afterf
+## After
 
 ```php
 /**
