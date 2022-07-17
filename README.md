@@ -1,7 +1,8 @@
 # mysql-grammar-addon
 
 [![Latest Test](https://github.com/friendsofhyperf/mysql-grammar-addon/workflows/tests/badge.svg)](https://github.com/friendsofhyperf/mysql-grammar-addon/actions)
-[![Latest Stable Version](https://img.shields.io/packagist/v/friendsofhyperf/mysql-grammar-addon)](https://packagist.org/packages/friendsofhyperf/mysql-grammar-addon)
+[![Latest Stable Version](https://poser.pugx.org/friendsofhyperf/mysql-grammar-addon/v/stable.svg)](https://packagist.org/packages/friendsofhyperf/mysql-grammar-addon)
+[![Latest Unstable Version](https://poser.pugx.org/friendsofhyperf/mysql-grammar-addon/v/unstable.svg)](https://packagist.org/packages/friendsofhyperf/mysql-grammar-addon)
 [![Total Downloads](https://img.shields.io/packagist/dt/friendsofhyperf/mysql-grammar-addon)](https://packagist.org/packages/friendsofhyperf/mysql-grammar-addon)
 [![License](https://img.shields.io/packagist/l/friendsofhyperf/mysql-grammar-addon)](https://github.com/friendsofhyperf/mysql-grammar-addon)
 
