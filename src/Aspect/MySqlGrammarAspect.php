@@ -30,18 +30,21 @@ class MySqlGrammarAspect extends AbstractAspect
 
     public function process(ProceedingJoinPoint $proceedingJoinPoint)
     {
-        return match ($proceedingJoinPoint->getReflectMethod()->getName()) {
-            'compileColumnListing' => str_replace(
-                ', `column_comment` as `column_comment`,',
-                ', binary `column_comment` as `column_comment`,',
-                $proceedingJoinPoint->process()
-            ),
-            'compileColumns' => str_replace(
-                ', `column_comment`',
-                ', binary `column_comment`',
-                $proceedingJoinPoint->process()
-            ),
-            default => $proceedingJoinPoint->process()
-        };
+        switch ($proceedingJoinPoint->getReflectMethod()->getName()) {
+            case 'compileColumnListing':
+                return str_replace(
+                    ', `column_comment` as `column_comment`,',
+                    ', binary `column_comment` as `column_comment`,',
+                    $proceedingJoinPoint->process()
+                );
+            case 'compileColumns':
+                return str_replace(
+                    ', `column_comment`',
+                    ', binary `column_comment`',
+                    $proceedingJoinPoint->process()
+                );
+        }
+
+        return $proceedingJoinPoint->process();
     }
 }
