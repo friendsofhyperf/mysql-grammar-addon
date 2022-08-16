@@ -10,25 +10,16 @@ declare(strict_types=1);
  */
 namespace FriendsOfHyperf\MySqlGrammarAddon;
 
+use FriendsOfHyperf\MySqlGrammarAddon\Aspect\MySqlGrammarAspect;
+
 class ConfigProvider
 {
     public function __invoke(): array
     {
-        defined('BASE_PATH') or define('BASE_PATH', '');
-
         return [
-            'dependencies' => [],
-            'aspects' => [],
-            'annotations' => [
-                'scan' => [
-                    'paths' => [
-                        __DIR__,
-                    ],
-                ],
+            'aspects' => [
+                MySqlGrammarAspect::class,
             ],
-            'commands' => [],
-            'listeners' => [],
-            'publish' => [],
         ];
     }
 }
