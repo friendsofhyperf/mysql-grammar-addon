@@ -21,9 +21,6 @@
         }
     },
     "extra": {
-        "branch-alias": {
-            "dev-main": "1.0-dev"
-        },
         "hyperf": {
             "config": "FriendsOfHyperf\\MySqlGrammarAddon\\ConfigProvider"
         }
